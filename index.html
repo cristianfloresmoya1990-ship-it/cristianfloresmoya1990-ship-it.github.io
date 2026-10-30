@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACG Copias · ACG Cars</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #333; background: #fff; margin: 0; line-height: 1.6; }
+  header { border-bottom: 6px solid #00DF43; padding: 24px 16px; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { margin: 0; font-size: 1.8rem; }
+  a { color: #333; }
+  footer { max-width: 720px; margin: 0 auto; padding: 16px; color: #666; font-size: .9rem; border-top: 1px solid #ddd; }
+</style>
+</head>
+<body>
+<header><main style="padding:0"><h1>ACG Copias</h1><p style="margin:4px 0 0">Herramienta interna de copias de seguridad de ACG Cars (Menorca)</p></main></header>
+<main>
+  <p><strong>ACG Copias</strong> es una herramienta de uso exclusivamente interno de ACG Cars. Guarda copias de seguridad <strong>cifradas</strong> de su aplicación de mantenimiento de flota (ACG Fleet Control) en la cuenta de Google Drive de la propia empresa.</p>
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Cada día subirá a Google Drive una copia cifrada de la base de datos y de los documentos de la aplicación de mantenimiento.</li>
+    <li>Solo usa el permiso de Google Drive «drive.file»: únicamente puede ver y gestionar los archivos que ella misma crea, en la carpeta «ACG-Fleet-copias». No puede ver ningún otro archivo de Drive.</li>
+    <li>Las copias se cifran antes de salir, de modo que Google no puede leer su contenido.</li>
+  </ul>
+  <h2>Estado actual (30/10/2026)</h2>
+  <ul>
+    <li><strong>En funcionamiento:</strong> copias diarias cifradas guardadas en el repositorio privado de ACG Cars en GitHub, con una prueba semanal de restauración.</li>
+    <li><strong>En configuración:</strong> la segunda ubicación en Google Drive. Todavía no se ha subido ninguna copia a Drive. La conservación automática en Drive (30 copias diarias y una mensual durante 13 meses) empezará a aplicarse solo cuando Drive haya demostrado que funciona de forma continuada. Hasta entonces no se borra ninguna copia.</li>
+  </ul>
+  <h2>Quién puede usarla</h2>
+  <p>No es una aplicación pública ni está disponible para otras personas u organizaciones. Solo la utiliza la cuenta de Google de copias de ACG Cars.</p>
+  <p style="font-size:1.1rem"><strong><a href="privacidad.html">Política de privacidad de ACG Copias</a></strong></p>
+</main>
+<footer>ACG Cars · Menorca · Contacto: acgflotabackup@gmail.com · <a href="privacidad.html">Política de privacidad</a></footer>
+</body>
+</html>

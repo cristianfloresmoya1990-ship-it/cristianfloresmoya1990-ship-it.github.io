@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · ACG Copias</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #333; background: #fff; margin: 0; line-height: 1.6; }
+  header { border-bottom: 6px solid #00DF43; padding: 24px 16px; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { margin: 0; font-size: 1.8rem; }
+  a { color: #333; }
+  footer { max-width: 720px; margin: 0 auto; padding: 16px; color: #666; font-size: .9rem; border-top: 1px solid #ddd; }
+</style>
+</head>
+<body>
+<header><main style="padding:0"><h1>Política de privacidad de ACG Copias</h1><p style="margin:4px 0 0">Última actualización: 30/10/2026</p></main></header>
+<main>
+  <p>ACG Copias es una herramienta interna de ACG Cars (Menorca) para guardar copias de seguridad de su aplicación de mantenimiento de flota. Solo la utiliza la cuenta de Google de la empresa <strong>acgflotabackup@gmail.com</strong>. No está destinada a otras personas.</p>
+
+  <h2>Estado actual (30/10/2026)</h2>
+  <p>Las copias cifradas en GitHub ya funcionan. La conexión con Google Drive se está configurando y todavía no se ha subido ninguna copia a Drive. Esta política describe cómo funcionará la herramienta con Google Drive una vez activada.</p>
+
+  <h2>1. Datos de Google a los que accede</h2>
+  <p>ACG Copias solo pide el permiso de Google Drive <strong>«drive.file»</strong>. Con él únicamente puede ver y gestionar los archivos que la propia herramienta ha creado, en la carpeta «ACG-Fleet-copias». No puede leer, modificar ni listar ningún otro archivo de Google Drive, ni el correo, los contactos u otros datos de la cuenta.</p>
+
+  <h2>2. Para qué los usa</h2>
+  <ul>
+    <li>Subir cada día una copia de seguridad cifrada de la aplicación de mantenimiento de flota de ACG Cars.</li>
+    <li>Comprobar que las copias subidas están completas y son correctas.</li>
+    <li>Descargar copias para probar periódicamente que se pueden restaurar, o para recuperar los datos en caso de pérdida.</li>
+    <li>Borrar las copias antiguas según la política de conservación: 30 copias diarias y una copia mensual durante 13 meses. Esta conservación solo empieza a aplicarse cuando hay al menos 20 copias recientes en Drive y la copia del día está comprobada. Hasta entonces no se borra ninguna copia.</li>
+  </ul>
+
+  <h2>3. Qué contienen las copias</h2>
+  <p>Las copias contienen información interna de la empresa: vehículos de la flota, órdenes de reparación, recambios y los documentos asociados. Se <strong>cifran con AES-256 antes de subirse</strong>. Ni Google ni ningún tercero puede leer su contenido sin la contraseña de cifrado, que solo conoce ACG Cars.</p>
+
+  <h2>4. Dónde se procesan y guardan</h2>
+  <ul>
+    <li>Las copias se generan, suben y comprueban mediante tareas automáticas de GitHub Actions en el repositorio privado de ACG Cars. Durante las pruebas de restauración, las copias cifradas se descargan temporalmente en esas tareas y se borran al terminar.</li>
+    <li>El permiso de acceso a Google Drive se guarda cifrado como secreto del repositorio privado de GitHub y en un archivo privado de un ordenador de la empresa.</li>
+    <li>Las copias cifradas se guardan en Google Drive (cuenta de ACG Cars) y en GitHub (repositorio privado de ACG Cars).</li>
+  </ul>
+
+  <h2>5. Con quién se comparten</h2>
+  <p>Con nadie. ACG Copias no vende, no cede y no comparte datos con terceros, no los usa para publicidad y no los usa para entrenar modelos de inteligencia artificial. Los únicos servicios que intervienen son los propios de la empresa descritos arriba: Google Drive y GitHub.</p>
+
+  <h2>6. Cumplimiento de la política de Google</h2>
+  <p>El uso y la transferencia de la información recibida de las API de Google por parte de ACG Copias cumplen la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado («Limited Use»).</p>
+
+  <h2>7. Cómo retirar el acceso</h2>
+  <p>El acceso se puede retirar en cualquier momento desde la cuenta de Google, en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, quitando «ACG Copias». Las copias ya guardadas en Drive se pueden borrar desde la propia cuenta.</p>
+
+  <h2>8. Contacto</h2>
+  <p>ACG Cars · Menorca · <a href="mailto:acgflotabackup@gmail.com">acgflotabackup@gmail.com</a></p>
+  <p><a href="index.html">← ACG Copias</a></p>
+</main>
+<footer>ACG Cars · Menorca</footer>
+</body>
+</html>
